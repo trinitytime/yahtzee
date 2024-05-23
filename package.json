@@ -1,8 +1,23 @@
 {
   "name": "@trinitytime/yahtzee",
+  "version": "0.0.1",
+  "license": "MIT",
   "module": "src/index.ts",
   "type": "module",
-  "bin": "node dist/index.js",
+  "bin": {
+    "yahtzee": "src/index.ts"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trinitytime/yahtzee.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
   "devDependencies": {
     "@types/bun": "latest",
     "@types/lodash": "^4.17.4"
@@ -12,8 +27,6 @@
   },
   "dependencies": {
     "commander": "^12.0.0",
-    "lodash": "^4.17.21",
-    "tsx": "^4.10.2",
-    "zx": "^8.1.0"
+    "lodash": "^4.17.21"
   }
 }
